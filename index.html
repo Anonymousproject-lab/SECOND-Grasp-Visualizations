@@ -117,6 +117,25 @@
       gap: 24px;
     }
 
+    .video-grid.three-column {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .video-subsection {
+      margin-top: 40px;
+      margin-bottom: 18px;
+    }
+
+    .video-subsection h3 {
+      margin: 0 0 6px;
+      font-size: 1.3rem;
+    }
+
+    .video-subsection p {
+      margin: 0;
+      color: var(--muted);
+    }
+
     .video-card {
       overflow: hidden;
       border: 1px solid var(--line);
@@ -180,6 +199,10 @@
         grid-template-columns: 1fr;
       }
 
+      .video-grid.three-column {
+        grid-template-columns: 1fr;
+      }
+
       .wide {
         grid-column: auto;
       }
@@ -212,7 +235,7 @@
 
   <main class="container">
 
-    <section id="grasp results">
+    <section id="semantic-grasps">
       <div class="section-header">
         <h2>Grasp Results</h2>
         <p class="section-description">
@@ -266,6 +289,51 @@
           <div class="caption">
             <h3>Example 4</h3>
             <p>Replace this text with the intended semantic contact behavior.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="video-subsection">
+        <h3>Robustness to Action Execution Noise</h3>
+        <p>
+          Qualitative comparisons under different levels of Gaussian action noise.
+        </p>
+      </div>
+
+      <div class="video-grid three-column">
+        <article class="video-card">
+          <div class="video-wrapper">
+            <video controls muted loop playsinline preload="metadata">
+              <source src="videos/2_action_original.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="caption">
+            <h3>Clean</h3>
+            <p>Grasp execution without action noise.</p>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <div class="video-wrapper">
+            <video controls muted loop playsinline preload="metadata">
+              <source src="videos/2_action_original_noise05.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="caption">
+            <h3>Action Noise: &sigma; = 0.05</h3>
+            <p>Grasp execution with Gaussian action noise at &sigma; = 0.05.</p>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <div class="video-wrapper">
+            <video controls muted loop playsinline preload="metadata">
+              <source src="videos/2_action_original_noise10.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="caption">
+            <h3>Action Noise: &sigma; = 0.10</h3>
+            <p>Grasp execution with Gaussian action noise at &sigma; = 0.10.</p>
           </div>
         </article>
       </div>
