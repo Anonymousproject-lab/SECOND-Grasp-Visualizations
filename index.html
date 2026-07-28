@@ -1,12 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Additional qualitative results addressing reviewer comments for an anonymous submission." />
-  <title>SECOND-Grasp</title>
-
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Additional qualitative results addressing reviewer comments for an anonymous submission." name="description"/>
+<title>SECOND-Grasp</title>
+<style>
     :root {
       --bg: #f6f7fb;
       --surface: rgba(255, 255, 255, 0.94);
@@ -363,277 +363,257 @@
         transform: none;
       }
     }
-  </style>
+  
 
+    .video-grid .caption {
+      min-height: 0;
+    }
+
+
+    .metric-line {
+      margin-top: 7px !important;
+      color: var(--muted);
+      font-size: 0.84rem !important;
+      font-variant-numeric: tabular-nums;
+      letter-spacing: 0.005em;
+      white-space: normal;
+    }
+
+    .video-grid .caption {
+      min-height: 92px;
+    }
+</style>
 </head>
-
 <body>
-  <header>
-    <div class="container">
-      <h1>SECOND-Grasp: Semantic Contact-guided Dexterous Grasping</h1>
-      <p class="subtitle">
+<header>
+<div class="container">
+<h1>SECOND-Grasp: Semantic Contact-guided Dexterous Grasping</h1>
+<p class="subtitle">
         Additional Results for Rebuttal
       </p>
-    </div>
-  </header>
-
-  <nav>
-    <div class="container">
-      <a href="#intent-grasps">Intent Grasps</a>
-      <a href="#action-noise">Action Noise</a>
-      <a href="#latency">Latency</a>
-      <a href="#friction">Friction Variation</a>
-    </div>
-  </nav>
-
-  <main class="container">
-
+</div>
+</header>
+<nav>
+<div class="container">
+<a href="#intent-grasps">Intent Grasps</a>
+<a href="#action-noise">Action Noise</a>
+<a href="#latency">Control Latency</a>
+<a href="#friction">Contact Dynamics</a>
+</div>
+</nav>
+<main class="container">
 <!-- intent grasp -->
-
-    <section id="intent-grasps">
-      <div class="video-subsection">
-        <h2>Intent Grasp Results</h2>
-        <p>
+<section id="intent-grasps">
+<div class="video-subsection">
+<h2>Intent Grasp Results</h2>
+<p>
           Qualitative examples of intent grasping from natural language instructions.
         </p>
-      </div>
-
-      <!-- Bottle -->
-      <div class="video-subsection">
-        <h3>Bottle</h3>
-      </div>
-
-      <div class="intent-grid">
-        <article class="video-card">
-          <div class="video-wrapper">
-            <video controls muted loop playsinline preload="metadata">
-              <source src="./videos/1_Intent_clip/bottle_body.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <div class="caption">
-            <h3>Body</h3>
-            <p>Wrap your hand around the body of the bottle.</p>
-          </div>
-        </article>
-
-        <article class="video-card">
-          <div class="video-wrapper">
-            <video controls muted loop playsinline preload="metadata">
-              <source src="./videos/1_Intent_clip/bottle_handle_.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <div class="caption">
-            <h3>Handle</h3>
-            <p>Pick up the bottle by its handle.</p>
-          </div>
-        </article>
-      </div>
-
-      <!-- Microcamera -->
-      <div class="video-subsection">
-        <h3>Microcamera</h3>
-      </div>
-
-      <div class="intent-grid">
-        <article class="video-card">
-          <div class="video-wrapper">
-            <video controls muted loop playsinline preload="metadata">
-              <source src="./videos/1_Intent_clip/microcam_base_.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <div class="caption">
-            <h3>Base</h3>
-            <p>Grasp the base of the microcamera.</p>
-          </div>
-        </article>
-
-        <article class="video-card">
-          <div class="video-wrapper">
-            <video controls muted loop playsinline preload="metadata">
-              <source src="./videos/1_Intent_clip/microcam_head_.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <div class="caption">
-            <h3>Head</h3>
-            <p>Grasp the head of the microcamera.</p>
-          </div>
-        </article>
-      </div>
-
-      <!-- Pot -->
-      <div class="video-subsection">
-        <h3>Pot</h3>
-      </div>
-
-      <div class="intent-grid">
-        <article class="video-card">
-          <div class="video-wrapper">
-            <video controls muted loop playsinline preload="metadata">
-              <source src="./videos/1_Intent_clip/pot_body_.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <div class="caption">
-            <h3>Body</h3>
-            <p>Grasp the body of the pot.</p>
-          </div>
-        </article>
-
-        <article class="video-card">
-          <div class="video-wrapper">
-            <video controls muted loop playsinline preload="metadata">
-              <source src="./videos/1_Intent_clip/pot_handle_.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <div class="caption">
-            <h3>Handle</h3>
-            <p>Grasp the handle of the pot.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
+</div>
+<!-- Bottle -->
+<div class="video-subsection">
+<h3>Bottle</h3>
+</div>
+<div class="intent-grid">
+<article class="video-card">
+<div class="video-wrapper">
+<video controls="" loop="" muted="" playsinline="" preload="metadata">
+<source src="./videos/1_Intent_clip/bottle_body.mp4" type="video/mp4"/>
+</video>
+</div>
+<div class="caption">
+<h3>Body</h3>
+<p>Wrap your hand around the body of the bottle.</p>
+</div>
+</article>
+<article class="video-card">
+<div class="video-wrapper">
+<video controls="" loop="" muted="" playsinline="" preload="metadata">
+<source src="./videos/1_Intent_clip/bottle_handle_.mp4" type="video/mp4"/>
+</video>
+</div>
+<div class="caption">
+<h3>Handle</h3>
+<p>Pick up the bottle by its handle.</p>
+</div>
+</article>
+</div>
+<!-- Microscope -->
+<div class="video-subsection">
+<h3>Microscope</h3>
+</div>
+<div class="intent-grid">
+<article class="video-card">
+<div class="video-wrapper">
+<video controls="" loop="" muted="" playsinline="" preload="metadata">
+<source src="./videos/1_Intent_clip/microcam_base_.mp4" type="video/mp4"/>
+</video>
+</div>
+<div class="caption">
+<h3>Base</h3>
+<p>Grasp the base of the microscope.</p>
+</div>
+</article>
+<article class="video-card">
+<div class="video-wrapper">
+<video controls="" loop="" muted="" playsinline="" preload="metadata">
+<source src="./videos/1_Intent_clip/microcam_head_.mp4" type="video/mp4"/>
+</video>
+</div>
+<div class="caption">
+<h3>Head</h3>
+<p>Grasp the head of the microscope.</p>
+</div>
+</article>
+</div>
+<!-- Pot -->
+<div class="video-subsection">
+<h3>Pot</h3>
+</div>
+<div class="intent-grid">
+<article class="video-card">
+<div class="video-wrapper">
+<video controls="" loop="" muted="" playsinline="" preload="metadata">
+<source src="./videos/1_Intent_clip/pot_body_.mp4" type="video/mp4"/>
+</video>
+</div>
+<div class="caption">
+<h3>Body</h3>
+<p>Grasp the body of the pot.</p>
+</div>
+</article>
+<article class="video-card">
+<div class="video-wrapper">
+<video controls="" loop="" muted="" playsinline="" preload="metadata">
+<source src="./videos/1_Intent_clip/pot_handle_.mp4" type="video/mp4"/>
+</video>
+</div>
+<div class="caption">
+<h3>Handle</h3>
+<p>Grasp the handle of the pot.</p>
+</div>
+</article>
+</div>
+</section>
 <!-- action noise -->
-
-    <section id="action-noise">
-      <div class="video-subsection">
-        <h3>Robustness to Action Execution Noise</h3>
-        <p>
-          Qualitative comparisons under different levels of Gaussian action noise.
-        </p>
-      </div>
-
-      <div class="video-grid three-column">
-        <article class="video-card">
-          <div class="video-wrapper">
-            <video controls muted loop playsinline preload="metadata">
-              <source src="videos/2_action_noise/2_action_original.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <div class="caption">
-            <h3>Original</h3>
-          </div>
-        </article>
-
-        <article class="video-card">
-          <div class="video-wrapper">
-            <video controls muted loop playsinline preload="metadata">
-              <source src="./videos/2_action_noise/2_action_original_noise05.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <div class="caption">
-            <h3>Action Noise: &sigma; = 0.05</h3>
-          </div>
-        </article>
-
-        <article class="video-card">
-          <div class="video-wrapper">
-            <video controls muted loop playsinline preload="metadata">
-              <source src="videos/2_action_noise/2_action_original_noise10.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <div class="caption">
-            <h3>Action Noise: &sigma; = 0.10</h3>
-          </div>
-        </article>
-      </div>
-    </section>
-
+<section id="action-noise">
+<div class="video-subsection">
+<h3>Robustness to Action Execution Noise</h3>
+<p>Qualitative results under Gaussian action perturbations, compared with the clean nominal setting.</p>
+</div>
+<div class="video-grid three-column">
+<article class="video-card">
+<div class="video-wrapper">
+<video controls="" loop="" muted="" playsinline="" preload="metadata">
+<source src="videos/2_action_noise/2_action_original.mp4" type="video/mp4"/>
+</video>
+</div>
+<div class="caption">
+<h3>Clean · Nominal</h3>
+<p class="metric-line">GSR 96.5  ·  ISR 86.2  ·  mSAD 2.31 cm</p></div>
+</article>
+<article class="video-card">
+<div class="video-wrapper">
+<video controls="" loop="" muted="" playsinline="" preload="metadata">
+<source src="./videos/2_action_noise/2_action_original_noise05.mp4" type="video/mp4"/>
+</video>
+</div>
+<div class="caption">
+<h3>Action Noise · σ = 0.05</h3>
+<p class="metric-line">GSR 92.9  ·  ISR 80.7  ·  mSAD 2.71 cm</p></div>
+</article>
+<article class="video-card">
+<div class="video-wrapper">
+<video controls="" loop="" muted="" playsinline="" preload="metadata">
+<source src="videos/2_action_noise/2_action_original_noise10.mp4" type="video/mp4"/>
+</video>
+</div>
+<div class="caption">
+<h3>Action Noise · σ = 0.10</h3>
+<p class="metric-line">GSR 93.1  ·  ISR 80.8  ·  mSAD 2.71 cm</p></div>
+</article>
+</div>
+</section>
 <!-- latency noise -->
-
-    <section id="latency">
-      <div class="video-subsection">
-        <h3>Robustness to Latency Action</h3>
-        <p>
-          Qualitative comparisons under different levels of Gaussian action noise.
-        </p>
-      </div>
-
-      <div class="video-grid three-column">
-        <article class="video-card">
-          <div class="video-wrapper">
-            <video controls muted loop playsinline preload="metadata">
-              <source src="videos/3_latency_clip/latency_origi.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <div class="caption">
-            <h3>Original</h3>
-          </div>
-        </article>
-
-        <article class="video-card">
-          <div class="video-wrapper">
-            <video controls muted loop playsinline preload="metadata">
-              <source src="videos/3_latency_clip/latency_phase1.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <div class="caption">
-            <h3>Action Noise: &sigma; = 0.05</h3>
-          </div>
-        </article>
-
-        <article class="video-card">
-          <div class="video-wrapper">
-            <video controls muted loop playsinline preload="metadata">
-              <source src="videos/3_latency_clip/latency_phase3.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <div class="caption">
-            <h3>Action Noise: &sigma; = 0.10</h3>
-          </div>
-        </article>
-      </div>
-    </section>
-
+<section id="latency">
+<div class="video-subsection">
+<h3>Robustness to Control Latency</h3>
+<p>Qualitative results under delayed control execution, compared with the clean nominal setting.</p>
+</div>
+<div class="video-grid three-column">
+<article class="video-card">
+<div class="video-wrapper">
+<video controls="" loop="" muted="" playsinline="" preload="metadata">
+<source src="videos/3_latency_clip/latency_origi.mp4" type="video/mp4"/>
+</video>
+</div>
+<div class="caption">
+<h3>Clean · Nominal</h3>
+<p class="metric-line">GSR 96.5  ·  ISR 86.2  ·  mSAD 2.31 cm</p></div>
+</article>
+<article class="video-card">
+<div class="video-wrapper">
+<video controls="" loop="" muted="" playsinline="" preload="metadata">
+<source src="videos/3_latency_clip/latency_phase1.mp4" type="video/mp4"/>
+</video>
+</div>
+<div class="caption">
+<h3>Control Latency · 1 Step (16.6 ms)</h3>
+<p class="metric-line">GSR 90.1  ·  ISR 82.7  ·  mSAD 2.83 cm</p></div>
+</article>
+<article class="video-card">
+<div class="video-wrapper">
+<video controls="" loop="" muted="" playsinline="" preload="metadata">
+<source src="videos/3_latency_clip/latency_phase3.mp4" type="video/mp4"/>
+</video>
+</div>
+<div class="caption">
+<h3>Control Latency · 3 Steps (49.8 ms)</h3>
+<p class="metric-line">GSR 73.0  ·  ISR 65.6  ·  mSAD 3.36 cm</p></div>
+</article>
+</div>
+</section>
 <!-- friction variation -->
-
-  <section id="friction">
-    <div class="video-subsection">
-      <h3>Robustness to Friction Variation</h3>
-      <p>
-        Qualitative comparisons under different object friction coefficients.
-      </p>
-    </div>
-
-    <div class="video-grid three-column">
-      <article class="video-card">
-        <div class="video-wrapper">
-          <video controls muted loop playsinline preload="metadata">
-            <source src="./videos/4_friction_clip/friction_0.5.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <div class="caption">
-          <h3>Friction Coefficient: &mu; = 0.5</h3>
-        </div>
-      </article>
-
-  <article class="video-card">
-    <div class="video-wrapper">
-      <video controls muted loop playsinline preload="metadata">
-        <source src="./videos/4_friction_clip/friction_origin.mp4" type="video/mp4" />
-      </video>
-    </div>
-    <div class="caption">
-      <h3>Default Friction</h3>
-    </div>
-  </article>
-
-  <article class="video-card">
-    <div class="video-wrapper">
-      <video controls muted loop playsinline preload="metadata">
-        <source src="./videos/4_friction_clip/friction_1.5.mp4" type="video/mp4" />
-      </video>
-    </div>
-    <div class="caption">
-      <h3>Friction Coefficient: &mu; = 1.5</h3>
-    </div>
-  </article>
-
-    </div>
-  </section>
-
-  </main>
-
-  <footer>
+<section id="friction">
+<div class="video-subsection">
+<h3>Robustness to Contact Dynamics</h3>
+<p>Qualitative results under variations in the object friction coefficient.</p>
+</div>
+<div class="video-grid three-column">
+<article class="video-card">
+<div class="video-wrapper">
+<video controls="" loop="" muted="" playsinline="" preload="metadata">
+<source src="./videos/4_friction_clip/friction_0.5.mp4" type="video/mp4"/>
+</video>
+</div>
+<div class="caption">
+<h3>Contact Dynamics · 0.5× Friction</h3>
+<p class="metric-line">GSR 91.0  ·  ISR 81.4  ·  mSAD 2.49 cm</p></div>
+</article>
+<article class="video-card">
+<div class="video-wrapper">
+<video controls="" loop="" muted="" playsinline="" preload="metadata">
+<source src="./videos/4_friction_clip/friction_origin.mp4" type="video/mp4"/>
+</video>
+</div>
+<div class="caption">
+<h3>Clean · Nominal Friction</h3>
+<p class="metric-line">GSR 96.5  ·  ISR 86.2  ·  mSAD 2.31 cm</p></div>
+</article>
+<article class="video-card">
+<div class="video-wrapper">
+<video controls="" loop="" muted="" playsinline="" preload="metadata">
+<source src="./videos/4_friction_clip/friction_1.5.mp4" type="video/mp4"/>
+</video>
+</div>
+<div class="caption">
+<h3>Contact Dynamics · 1.5× Friction</h3>
+<p class="metric-line">GSR 97.0  ·  ISR 79.4  ·  mSAD 2.76 cm</p></div>
+</article>
+</div>
+</section>
+</main>
+<footer>
     Additional rebuttal results for an anonymous NeurIPS submission.
   </footer>
 </body>
