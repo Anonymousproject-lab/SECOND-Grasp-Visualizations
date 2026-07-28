@@ -227,7 +227,7 @@
 <body>
   <header>
     <div class="container">
-      <h1>SECOND-Grasp</h1>
+      <h1>SECOND-Grasp: Semantic Contact-guided Dexterous Grasping</h1>
       <p class="subtitle">
         Supplementary visualizations for an anonymous NeurIPS submission.
       </p>
@@ -485,6 +485,56 @@
         </article>
       </div>
     </section>
+
+<!-- friction variation -->
+
+  <section id="friction">
+    <div class="video-subsection">
+      <h3>Robustness to Friction Variation</h3>
+      <p>
+        Qualitative comparisons under different object friction coefficients.
+      </p>
+    </div>
+
+    <div class="video-grid three-column">
+      <article class="video-card">
+        <div class="video-wrapper">
+          <video controls muted loop playsinline preload="metadata">
+            <source src="./videos/4_friction_clip/friction_0.5.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="caption">
+          <h3>Friction Coefficient: &mu; = 0.5</h3>
+          <p>Grasp execution under a reduced friction coefficient of &mu; = 0.5.</p>
+        </div>
+      </article>
+
+  <article class="video-card">
+    <div class="video-wrapper">
+      <video controls muted loop playsinline preload="metadata">
+        <source src="./videos/4_friction_clip/friction_origin.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="caption">
+      <h3>Default Friction</h3>
+      <p>Grasp execution under the default friction setting.</p>
+    </div>
+  </article>
+
+  <article class="video-card">
+    <div class="video-wrapper">
+      <video controls muted loop playsinline preload="metadata">
+        <source src="./videos/4_friction_clip/friction_1.5.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="caption">
+      <h3>Friction Coefficient: &mu; = 1.5</h3>
+      <p>Grasp execution under an increased friction coefficient of &mu; = 1.5.</p>
+    </div>
+  </article>
+
+    </div>
+  </section>
 
   </main>
 
